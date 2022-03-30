@@ -25,7 +25,7 @@
                 shortname: 'www-garinj-com',
                 api:'http://disqus.garinj.com/disqus/',
                 url: document.location.origin + document.location.pathname,
-                apikey: 'qNDU2fD1bEKPiDFreDaFl0jfbI50hOA58ypb4zl72cRXInTseUZZbeSDdhcYeRQ0',
+                apikey: '填写key',
 
             });
         </script>
