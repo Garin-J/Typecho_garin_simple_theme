@@ -1,0 +1,407 @@
+
+/********颜色**********/
+
+.garin-simple-bg{
+    background: #fff;
+    color:#555;
+}
+
+
+.garin-simple-bg a{
+    color:#555;
+}
+
+
+.garin-blue{
+    color: #1E9FFF;
+}
+
+.garin-separated{
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    color: #eee;
+}
+
+.garin-simple-font-color{
+    color:#555;
+}
+
+
+
+.garin-simple-nav-box {
+    box-shadow: 0px 1px 5px #eee;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 60px;
+}
+
+.garin-simple-box-bg{
+    background-color: #fff;
+}
+
+
+
+body{
+
+    font-family: 'Noto Serif SC', serif;
+}
+
+.layui-this{
+    background:#fff;
+}
+
+
+
+body::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+body::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #000;
+}
+
+body::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+
+
+
+.garin-simple-light{
+    margin: 0px 15px;
+}
+
+
+
+
+
+
+.garin-simple-mobile-nav-ul{
+    width: 100%;
+}
+.garin-simple-mobile-nav-ul a{
+    padding:0 15px;
+}
+
+.garin-simple-mobile-nav-title{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 15px;
+}
+.garin-simple-mobile-nav{
+    z-index: 100;
+    box-shadow: 0px 1px 5px #eee;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+}
+.garin-simple-mobile-nav-menu{
+    float: right;
+}
+
+
+.garin-simple-nav-item a{
+    padding: 0 15px 0 0;
+}
+
+
+html{
+    min-height: 100%;
+}
+.garin-main-box{
+    min-height: calc(100vh - 120px);
+}
+
+
+/********layui修改*********/
+
+
+
+
+
+
+.layui-nav-child{
+   border: 0px;
+}
+
+.layui-nav-itemed{
+    color:#555;
+}
+
+.layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+    color: #000!important;
+}
+
+
+.layui-nav .layui-nav-item a{
+    color: #555;
+}
+.layui-nav .layui-nav-item a:hover{
+    color: #000;
+}
+
+.layui-nav{
+    padding: 0 0;
+}
+.layui-nav-child dd{
+    text-align: center;
+    min-width: 120px;
+}
+.layui-nav .layui-this:after, .layui-nav-bar {
+    height: 0;
+
+}
+.layui-nav-item>a>i{
+    display: none;
+}
+.layui-nav-itemed>.layui-nav-child {
+    display: block;
+    background-color: rgb(240 240 240 / 30%)!important;
+}
+
+
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+    background:#fff;
+    color: black;
+}
+.layui-nav .layui-this:after, .layui-nav-bar{
+    height: 0;
+}
+
+.layui-nav-child{
+    background-color: #fff;
+}
+
+
+
+/*****头部*****/
+
+.garin-simple-nav-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.layui-nav .layui-nav-item a{
+    padding: 0 10px;
+}
+
+.layui-nav-itemed>a:hover{
+    color: black;
+}
+
+
+.garin-simple-mobile-nav-ul{
+    max-height: calc(70vh - 60px);
+    overflow: auto;
+}
+
+
+
+.garin-simple-search-pc  {
+    border: 1px solid #eee;
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.garin-simple-search-pc input{
+    width: 105px;
+    height: 30px;
+    border: 1px solid #eee;
+    font-size: 13px;
+    border: 0px;
+    float: left;
+}
+.garin-simple-search-pc  button{
+    float: right;
+    border: 0px;
+    height: 15px;
+    width: 15px;
+    line-height: 30px;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 111111s;
+    -webkit-transition: color 11111s ease-out, background-color 111111s ease-out;
+}
+
+
+/******archive******/
+.garin-simple-archive{
+    font-size: 24px;
+}
+
+.garin-simple-index-article-box{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+/*********foot*********/
+
+.garin-simple-foot-box{
+    background-color: #202020;
+    padding: 10px 0px;
+    font-size: 11px;
+    color:#999;
+    height: 40px;
+}
+
+.garin-simple-foot-box a{
+    font-size: 12px;
+    color: #1E9FFF;
+}
+
+
+.garin-simple-foot-link span{
+    margin-right: 5px;
+}
+.garin-simple-foot-link{
+    margin: 2px 0px;
+}
+
+
+
+/****************首页*****************/
+
+
+
+.garin-simple-introduce-box{
+
+   text-align: center;
+}
+
+.garin-simple-introduce-avatar{
+
+    margin: 10px 0px;
+}
+.garin-simple-introduce-avatar img{
+    width: 120px;
+    height: 120px;
+    border-radius:60px ;
+
+}
+
+
+
+
+.garin-simple-index-article-item{
+    margin: 45px 0px;
+}
+
+.garin-simple-index-article-item >p>a{
+    font-size: 22px;
+}
+
+
+.garin-simple-index-article-item-info{
+    margin: 5px 0px;
+    font-size: 12px;
+}
+.garin-simple-index-article-item-title{
+    font-weight: bold;
+}
+
+
+.garin-simple-introduce-signature{
+    margin: 20px 0;
+}
+
+.garin-simple-introduce-site{
+    margin-top: 20px;
+}
+.garin-simple-introduce-site i{
+    font-size: 20px;
+}
+.garin-simple-introduce-site a{
+    margin: 0px 5px;
+}
+
+/***********文章************/
+
+.garin-simple-post-box{
+    overflow: hidden;
+}
+
+.garin-simple-post-title a{
+    font-size: 24px;
+}
+.garin-simple-post-title{
+    font-size: 24px;
+}
+
+.garin-simple-post-content{
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+.garin-simple-post-content a{
+    text-decoration:underline;
+    white-space: nowrap;
+}
+
+
+.garin-simple-post-content pre{
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 5px;
+}
+
+.garin-simple-post-content blockquote{
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+.garin-simple-post-content img{
+    max-width: 100%;
+}
+
+.garin-simple-post-content ol{
+
+    list-style-type:demical;
+
+}
+.garin-simple-post-content ol li{
+
+    list-style-position:outside;
+
+}
+
+.garin-simple-post-infos{
+    font-size: 10px;
+    margin: 5px 0;
+}
+.garin-simple-post-infos span{
+    font-size: 10px;
+}
+
+
+.garin-simple-post-title{
+    font-weight: bold;
+
+  }
+
+
