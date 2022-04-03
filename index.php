@@ -4,7 +4,7 @@
  *
  * @package Typecho Garin Simple Theme
  * @author Garin
- * @version 1.0
+ * @version 1.1
  * @link http://www.garinj.com
  */
 
@@ -14,15 +14,51 @@ $this->need('header.php');
 
 <div class="garin-simple-introduce-box">
     <div class="garin-simple-introduce-avatar">
-        <img src="http://www.garinj.com/usr/themes/Garlin_Simplicity/img/avatar.jpg">
+
+        <img src=" <?php $this->options->themeUrl('/img/avatar.jpg');?>">
     </div>
     <div class="garin-simple-introduce-signature">
-        <p id="flash_text">不负遇见，不负每一份热爱，期待更好的我们！</p>
+        <p id="flash_text"></p>
     </div>
     <div class="garin-simple-introduce-site">
-          <a href="http://wpa.qq.com/msgrd?v=3&uin=17767023&site=qq&menu=yes"><i class="ri-qq-line"></i></a>
-          <a href="https://github.com/Garin-J"><i class="ri-github-fill"></i></a>
-          <a href="garinj@foxmail.com"><i class="ri-mail-line"></i></i></a>
+
+
+        <?php
+
+
+
+
+
+        if ($this->options->bilibili){
+            echo "<a target=\"_blank\" href=\"".$this->options->bilibili."\"><i class=\"ri-bilibili-fill\"></i></a>";
+        }
+
+        if ($this->options->github){
+            echo "<a target=\"_blank\" href=\"".$this->options->github."\"><i class=\"ri-github-fill\"></i></a>";
+        }
+
+
+          if ($this->options->csdn){
+            echo "<a target=\"_blank\" href=\"".$this->options->csdn."\"><i class=\"ri-copyright-fill\"></i></a>";
+          }
+
+        if ($this->options->qq){
+            echo "<a target=\"_blank\" href=\"http://wpa.qq.com/msgrd?v=3&uin=".$this->options->qq."\"><i class=\"ri-qq-fill\"></i></a>";
+        }
+
+        if ($this->options->email){
+            echo "<a target=\"_blank\" href=\"mailto:".$this->options->email."\"><i class=\"ri-mail-fill\"></i></a>";
+        }
+
+
+
+        ?>
+
+
+
+
+
+
     </div>
 </div>
 
@@ -49,8 +85,17 @@ $this->need('header.php');
     let divTyping = document.getElementById('flash_text')
     let i = 0,
         timer = 0,
-        str = '不负遇见，不负每一份热爱，期待更好的我们！'
-    let flash=0;
+        <?php
+        if ($this->options->motto){
+            echo "str='".$this->options->motto."';";
+        }else{
+            echo "str='由Typecho&Garin联合驱动 :) ';";
+        }
+
+
+        ?>
+
+    var flash=0;
     function flashing(){
         if(flash==0){
             divTyping.innerHTML = str + '_';
