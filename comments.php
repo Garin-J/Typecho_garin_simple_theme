@@ -2,32 +2,29 @@
 
 
 
-
-
-
-
 <div id="comments">
-
-    <div id="disqus_thread"></div>
+    <div id="comment"></div>
 
     <?php $this->comments()->to($comments); ?>
 
     <?php if ($this->allow('comment')): ?>
 
 
-
-
-        <script src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js"></script>
+        <link rel="stylesheet" href="<?php $this->options->themeUrl('/css/iDisqus.min.css'); ?>" />
+        <script src="<?php $this->options->themeUrl('/js/iDisqus.min.js'); ?>"></script>
 
         <script>
-
-            var dsqjs = new DisqusJS({
-                shortname: 'www-garinj-com',
-                api:'http://disqus.garinj.com/disqus/',
+            var disq = new iDisqus('comment', {
+                forum: 'fooleap',
+                site: 'https://www.garinj.com/',
+                api: 'xxx需要反代，请看博客的说明',
                 url: document.location.origin + document.location.pathname,
-                apikey: '自己的key',
-
+                mode: 2,
+                timeout: 3000,
+                init: true,
+                emojiPreview: true
             });
+            disq.count();
         </script>
 
     <?php endif; ?>

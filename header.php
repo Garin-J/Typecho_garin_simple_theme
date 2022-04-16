@@ -13,7 +13,13 @@
         ], '', ' - '); ?><?php $this->options->title(); ?></title>
 
 
+
+
     <!-- 使用url函数转换相关路径 -->
+
+    <link rel="icon" href="<?php $this->options->themeUrl('/img/favicon.ico'); ?>" mce_href="<?php $this->options->themeUrl('/img/favicon.ico'); ?>" type="image/x-icon">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css">
 
 

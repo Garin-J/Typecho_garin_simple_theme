@@ -15,7 +15,7 @@
             <span><?php $this->category(','); ?></span>
         </p>
     </div>
-    <div class="garin-simple-post-content">
+    <div id="garin-simple-post-content" class="garin-simple-post-content">
         <?php $this->content(); ?>
     </div>
     <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
@@ -25,5 +25,13 @@
     </ul>
 </div><!-- end #main-->
 
+<script>
+    //调用示例
+    layer.photos({
+        photos: '#garin-simple-post-content'
+        ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+    });
+
+</script>
 <?php $this->need('comments.php'); ?>
 <?php $this->need('footer.php'); ?>
